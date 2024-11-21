@@ -15,7 +15,7 @@ function mySignUp(){
     if (password !== c_password) {
         document.getElementById('message').textContent = 'Passwords do not match, input correct password!';
     } else {
-        window.location.href = 'homepage.html';
+        window.location.href = "homepage.html";
     }
 }
 function myLogin() { 
@@ -25,6 +25,6 @@ function myLogin() {
     if (password !== c_password) {
         document.getElementById('message2').textContent = 'Incorrect password. Please try again!';
     } else {
-        window.location.href = 'homepage.html';
+        window.moveTo('homepage.html');
     }
 }

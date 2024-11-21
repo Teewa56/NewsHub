@@ -12,8 +12,8 @@
             <h1>NewsHub</h1>
         </div>
         <ul class="navlinks">
-            <a href="#" id="Home">Home</a>
-            <a href="#">Trending</a>
+            <a href="#Home1" id="Home">Home</a>
+            <a href="#trending">Trending</a>
             <a href="#">News <b id="open">&triangledown;</b><b id="close">&triangle;</b></a>
             <a href="#">Podcasts</a>
             <a href="#">Authors</a>  
@@ -67,7 +67,7 @@
         </ul>
     </div>
 
-    <div class="wlc">
+    <div class="wlc" id="Home1">
         <div class="wlc-text">
             <p class="wlc-text-1">Transform Your Ideas into <br> Quality Products with NewsHub</p>
             <p class="wlc-text-2">
@@ -75,7 +75,7 @@
                 and one of the best in the world
             </p>
             <div class="wlc-button-container">
-                <button>Get Started</button>
+                <button onclick="window.scrollTo(0, 800)" >Get Started</button>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="trending">
+    <div class="trending" id="trending">
         <h1>
             Trending Now
         </h1>
@@ -170,13 +170,13 @@
             <div class="blog-demo">
             
                 <div class="top-blog-demo">
-                    <h2>
+                    <h2 id="article-title">
                         Nigeria's Economy in 50 years, a story you will tell
                     </h2>
                     <h3>Author : E A Adams</3>
                 </div>
     
-                <div class="text-area-blog-demo">
+                <div class="text-area-blog-demo" id="article-content">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo id, in error aut itaque unde laboriosam possimus dolorem aspernatur ut perferendis, nihil blanditiis. Veniam, autem molestias ullam ipsum officiis eum.
                     </p>
@@ -191,22 +191,20 @@
     
             <div class="comment-blog-top">
                 <label for="">Comment</label> <br>
-                <textarea name="" id="comment-input" cols="30" rows= "5" style="border-radius: 20px; font-size: 20px; padding: 10px;">
+                <textarea name="" placeholder="Your Comments" id="comment-input" cols="30" rows= "5" style="border-radius: 20px; font-size: 20px; padding: 10px;">
                 </textarea> <br>
                 <label for="">Name</label> <br>
-                <input type="text" id="input-text"><br>
-                <button class="comment-button" onclick="submitComment()">
+                <input type="text" id="input-text" placeholder="Your Name"><br>
+                <p id="warning" style="color: red;"></p> <br>
+                <button class="comment-button" id="comment-button">
                     Comment
                 </button>
             </div>
-    
-            <div class="comments-drop">
-                <h1>Comments</h1>
-                <div class="comments-sect">
-                    <h3 id="comment-name"></h3>
-                    <p id="comment-out"></p>
-                </div>
+            <h1 style="font-size: 30px; padding: 10px 10px 0 20px; color: white; border-bottom:  2px solid white;">Comments</h1>
+            <div id="comments-list">
+                
             </div>
+            
         </div>
         
         <div class="small-div-demo">
@@ -214,15 +212,15 @@
                 More Stories 
             </h1>
             <ul class="m-stories">
-                <a href="#">Federal Government reduces price of fuel by 40% in 40 hours</a>
-                <a href="#">State house of assembly dissmisses 3 representatives for bad conduct</a>
-                <a href="#">Federal High court charges CBN governor for alleged fraudulents activities </a>
-                <a href="#">Poor infrastructure in Nigerian schools, a point of concern in 2024</a>
-                <a href="#">Gloal Warming: Advantages and Disadvantages</a>
-                <a href="#">The Future of Agriculture in Nigeria</a>
-                <a href="#">Lack of stability in Governance, a big problem for Africa</a>
-                <a href="#">Davido to win afro single Grammy awards tonight</a>
-                <a href="#">Oshimen Scores four goals, 7 goal contributions in 5 games</a>
+                <a href="#" onclick="showArticle(0)">Federal Government reduces price of fuel by 40% in 40 hours</a>
+                <a href="#" onclick="showArticle(1)">State house of assembly dissmisses 3 representatives for bad conduct</a>
+                <a href="#" onclick="showArticle(2)">Federal High court charges CBN governor for alleged fraudulents activities </a>
+                <a href="#" onclick="showArticle(3)">Poor infrastructure in Nigerian schools, a point of concern in 2024</a>
+                <a href="#" onclick="showArticle(4)">Gloal Warming: Advantages and Disadvantages</a>
+                <a href="#" onclick="showArticle(5)">The Future of Agriculture in Nigeria</a>
+                <a href="#" onclick="showArticle(6)">Lack of stability in Governance, a big problem for Africa</a>
+                <a href="#" onclick="showArticle(7)">Davido to win afro single Grammy awards tonight</a>
+                <a href="#" onclick="showArticle(8)">Oshimen Scores four goals, 7 goal contributions in 5 games</a>
             </ul>
         </div>
     </div>
@@ -297,6 +295,9 @@
         Developer : Walker @Walker77
     </p>
 
+   
+
+<script src="ARTICLES.js"></script>
 <script src="homepage.js"></script>
 </body>
 </html>

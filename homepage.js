@@ -34,13 +34,54 @@ document.getElementById("side-close").onclick=()=>{
 }
 
 
+const commentList = document.getElementById("comments-list");
+const commentButton = document.getElementById("comment-button");
+const commentInput = document.getElementById("comment-input");
+const userNameInput = document.getElementById("input-text");
+
+let comments = [];
+let userHasCommented = false;
 
 
-function submitComment(){
-    console.log("clicked");
-    const comment_input = document.getElementById("comment-input");
-    const input_name = document.getElementById("input-text");
+commentButton.addEventListener('click', ()=>{
+    const userName = userNameInput.value.trim();
+    const comment = commentInput.value.trim();
 
-    document.getElementById("comment-name").innerHTML = input_name;
-    document.getElementById("comment-out").innerHTML = comment_input;
+    if (!comment || !userName){
+        document.getElementById("warning").innerHTML = "Enter your name and comment!";
+        return;
+    }
+
+    if(userHasCommented){
+        document.getElementById("warning").innerHTML = "you can only comment once";
+        return;
+    }
+
+    const newComment = { userName, comment};
+    comments.push(newComment);
+    userHasCommented = true;
+
+    displayComments();
+    userNameInput.value = " ";
+    commentInput.value = " ";
+});
+
+function displayComments(){
+    commentList.innerHTML = " ";
+    var x = new Date();
+    comments.forEach((c) => {
+        const commentDiv = document.createElement('div');
+        commentDiv.classList.add("comments");
+        commentDiv.innerHTML = `<h1>${c.userName}</h1> <p>${c.comment}</p><p>${x}</p> `;
+        commentList.appendChild(commentDiv);
+    });
+}
+
+
+function showArticle(index){
+    const articleTitle = document.getElementById("article-title");
+    const articleContent = document.getElementById("article-content");
+
+    articleTitle.textContent = Articles[index].Title;
+    articleContent.textContent = Articles[index].content;
 }

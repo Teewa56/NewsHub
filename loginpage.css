@@ -18,24 +18,24 @@ body{
     margin: 20px;
 } 
 .signup-form,.login-form{   
-    padding: 30px; 
+    padding: 20px; 
     background: transparent;
     border-radius: 20px; 
     margin: 15px;
-    width: 400px; 
+    width: 300px; 
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 h1{
     text-align: center;
 }
 label{
-    font-size: 20px;
+    font-size: 15px;
 }
 input[type=text],input[type=number],input[type=email],input[type=password]{
     width: 95%;  
-    padding: 10px; 
+    padding: 7px; 
     border-radius: 10px;
-    margin-top: 10px 0 10px 0;
+    margin-top: 10px;
     background: transparent;
 }
 input[type=checkbox]{ 
@@ -46,7 +46,7 @@ input[type=submit]{
     padding: 10px; 
     margin-top: 5px;
     background-color: black;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     border-radius: 20px;
