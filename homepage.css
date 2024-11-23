@@ -251,7 +251,10 @@ body {
   height: 20vh;
   background-color: rgb(36, 37, 44);
   border-radius: 20px;
-  width: 50vh;
+  width: 40vh;
+}
+textarea{
+  columns: 20;
 }
 .erd-section-ele p {
   font-size: 25px;
