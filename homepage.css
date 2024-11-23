@@ -253,9 +253,6 @@ body {
   border-radius: 20px;
   width: 40vh;
 }
-textarea{
-  columns: 20;
-}
 .erd-section-ele p {
   font-size: 25px;
   font-weight: bold;
@@ -429,7 +426,7 @@ label {
   .erd-section-ele {
     margin: 10px;
     padding: 10px;
-    width: 330px;
+    width: 300px;
     height: fit-content;
   }
   .footer-holder {
