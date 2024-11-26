@@ -75,6 +75,7 @@ function displayComments(){
         commentDiv.innerHTML = `<h1>${c.userName}</h1> <p>${c.comment}</p><p>${x}</p> `;
         commentList.appendChild(commentDiv);
     });
+    document.getElementById("com").style.display = "block";
 }
 
 

@@ -3,48 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title> 
-    <link rel="stylesheet" href="loginpage.css">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
 </head>
-<body id="body">
-<div class="big_body">
-    <!--signup side-->
-    <div class="signup-container" id="signup-form">
-        <form action="" class="signup-form" id="signup-form2">
-            <h1>Sign Up</h1>
-            <label for="">First Name</label><br>
-            <input type="text" required><br>
-            <label for="">Last Name</label><br>
-            <input type="text" required><br>
-            <label for="">E-mail </label><br>
-            <input type="email" required><br>
-            <label for="">Password</label><br>
-            <input type="password" id="password"><br>
-            <label for="">Confirm Password</label><br>
-            <input type="password" id="c_password"><br>
-            <input type="checkbox" required> I agree with the terms and conditions of this website <br>
-            <p id="message" style="color: red;"> </p>
-            <input type="submit" value="Create Account"  id="C_A_L" onclick="mySignUp()"><br>
-            <p class="pp">Have an Account, <a href="#" id="LI_here">Login here</a></p>
-        </form>
+<body>
+    <nav class="header"> 
+        <div class="nav-name"> 
+            <h1>NewsHub</h1>
+        </div>
+        <ul class="navlinks">
+            <a href="#Home1" id="Home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#">News <b id="open">&triangledown;</b><b id="close">&triangle;</b></a>
+            <a href="#">Podcasts</a>
+            <a href="#">Authors</a>  
+        </ul> 
+        <div class="menu" id="menu">
+            <div class="m1"></div>
+            <div class="m1"></div>
+            <div class="m1"></div>
+        </div>
+    </nav> 
+
+    <div class="news-dropdown" id="news-dropdown">
+        <ul>
+            <a href="">Politics</a>
+            <a href="">Economy</a>            
+            <a href="">Lifestyle</a>
+        </ul>
+        <ul>
+            <a href="">Entertainment</a>
+            <a href="">Technology</a>            
+            <a href="">Foreign</a>
+        </ul>
+        <ul>
+            <a href="">Educaiton</a>
+            <a href="">Health</a>            
+            <a href="">Family</a>
+            <a href="">Travel</a>
+        </ul>
     </div>
-    <!--login side-->
-    <div class="hidden-form"id="login-container" >
-        <form action="" class="login-form" id="lg-form" >
-            <h1>Log In</h1>
-            <label for="">E-mail</label><br>
-            <input type="email" required><br>
-            <label for="">Password</label><br>
-            <input type="password" required id="password2"><br>
-            <label for="">Confirm Password</label><br>
-            <input type="password" required id="c_password2"><br>
-            <input type="checkbox" required> I agree with the terms and conditions of this website <br>
-            <p id="message2" style="color: red;"></p>
-            <input type="submit" value="Log In" id="L_I_N" onclick="myLogin()"><br>
-            <p class="pp">Have an Account, <a href="#" id="CA_here">Create an Account</a></p>
-        </form>
+
+    <div class="sidebar"  id="sidebar">
+        <ul class="sidelinks">
+            <a href="#" id="side-close">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Trending</a>
+            <a href="#" >News <b id="open1">&triangledown;</b><b id="close1">&triangle;</b></a>
+            <a href="#">Podcasts</a>
+            <a href="#">Authors</a>  
+            <ul id="news-side-drop">
+                <a href="">Politics</a>
+                <a href="">Economy</a>            
+                <a href="">Lifestyle</a>
+                <a href="">Entertainment</a>
+                <a href="">Technology</a>            
+                <a href="">Foreign</a>
+                <a href="">Educaiton</a>
+                <a href="">Health</a>            
+                <a href="">Family</a>
+                <a href="">Travel</a>
+            </ul>
+        </ul>
     </div>
-</div>
+
+    <div class="wlc" id="Home1">
+        <div class="wlc-text">
+            <p class="wlc-text-1">Transform Your Ideas into <br> Quality Products with NewsHub</p>
+            <p class="wlc-text-2">
+                We are the No.1 blogging site in Nigeria <br>
+                and one of the best in the world
+            </p>
+            <div class="wlc-button-container">
+                <button onclick="window.scrollTo(0, 800)" >Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about-sub">
+            <h1>About Us</h1>
+            <p>
+                Welcome NewsHub! Here, we share insightful articles, personal stories, and expert tips on a variety of topics, including lifestyle, travel, technology, and more. Our goal is to inspire, inform, and engage our readers through relatable content and vibrant discussions. We believe in the power of community and encourage you to share your thoughts and experiences in the comments. Join us on this journey as we explore new ideas and perspectives, and don’t forget to subscribe for the latest updates. Thank you for being a part of our community!
+            </p>
+        </div>
+    </div>
+
+    <div class="trending" id="trending">
+        <h1>
+            Trending Now
+        </h1>
+        <div class="trending-news">
+            <div class="trending-news-container">
+                <img src=" 0245e9b0f4e01b5c20e5676199cb77ec.jpg" alt="">
+                <p>
+                    At COP28, global leaders agreed on a comprehensive climate action.... 
+                    <a href="">Read More</a>
+                </p>
+            </div>
+            <div class="trending-news-container">
+                <img src=" download (12).jpeg" alt="">
+                <p>
+                    Generative AI continues to reshape industries, with new tools enhancing content creation....
+                    <a href="">Read More</a>
+                </p>
+            </div>
+            <div class="trending-news-container">
+                <img src=" 0245e9b0f4e01b5c20e5676199cb77ec.jpg" alt="">
+                <p>
+                    Mental health awareness is growing, with organizations promoting..... 
+                    <a href="">Read More</a>
+                </p>
+            </div>
+            <div class="trending-news-container">
+                <img src=" 0245e9b0f4e01b5c20e5676199cb77ec.jpg" alt="">
+                <p>
+                    Mental health awareness is growing, with organizations promoting mindfulness..... 
+                    <a href="">Read More</a>
+                </p>
+            </div>
+            <div class="trending-news-container">
+                <img src=" 0245e9b0f4e01b5c20e5676199cb77ec.jpg" alt="">
+                <p>
+                    Mental health awareness is growing, with organizations promoting mindfulness..... 
+                    <a href="">Read More</a>
+                </p>
+            </div>
+            <div class="trending-news-container">
+                <img src="images (6).jpeg" alt="">
+                <p>
+                    As inflation rates rise globally, economists analyze its impact on consumer..... 
+                    <a href="">Read More</a>
+                </p>
+            </div>
+            <div class="trending-news-container">
+                <img src=" 0245e9b0f4e01b5c20e5676199cb77ec.jpg" alt="">
+                <p>
+                    The 2024 Oscars are generating buzz with nominations for diverse films and performances.... 
+                    <a href="">Read More</a>
+                </p>
+            </div>
+            <div class="trending-news-container">
+                <img src=" 0245e9b0f4e01b5c20e5676199cb77ec.jpg" alt="">
+                <p>
+                    With travel rebounding, experts highlight the rise of eco-tourism and more.... 
+                    <a href="">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="erd-section">
+        <div class="erd-section-ele">
+            <p>Used by about 100,000 people worldwide</p>
+        </div>
+        <div class="erd-section-ele">
+            <p>Quality adverts at low cost</p>
+        </div>
+        <div class="erd-section-ele">
+            <p>Free access to the top trending news worldwide</p>
+        </div>
+    </div>
+
+    <div class="special-side">
+        <div class="big-div-demo">
+            <div class="blog-demo">
+            
+                <div class="top-blog-demo">
+                    <h2 id="article-title">
+                        Nigeria's Economy in 50 years, a story you will tell
+                    </h2>
+                    <h3>Author : E A Adams</3>
+                </div>
+    
+                <div class="text-area-blog-demo" id="article-content">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo id, in error aut itaque unde laboriosam possimus dolorem aspernatur ut perferendis, nihil blanditiis. Veniam, autem molestias ullam ipsum officiis eum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo id, in error aut itaque unde laboriosam possimus dolorem aspernatur ut perferendis, nihil blanditiis. Veniam, autem molestias ullam ipsum officiis eum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo id, in error aut itaque unde laboriosam possimus dolorem aspernatur ut perferendis, nihil blanditiis. Veniam, autem molestias ullam ipsum officiis eum.
+                    </p>
+                </div>   
+            </div>
+    
+            <div class="comment-blog-top">
+                <label for="">Comment</label> <br>
+                <textarea name="" placeholder="Your Comments" id="comment-input" cols="25" rows= "5" style="border-radius: 20px; font-size: 20px; padding: 10px;">
+                </textarea> <br>
+                <label for="">Name</label> <br>
+                <input type="text" id="input-text" placeholder="Your Name"><br>
+                <p id="warning" style="color: red; padding: 0 0 0 20px;"></p> <br>
+                <button class="comment-button" id="comment-button">
+                    Comment
+                </button>
+            </div>
+            <h1 style="font-size: 30px; padding: 10px 10px 0 20px; color: white; border-bottom:  2px solid white; display: none;" id="com">Comments</h1>
+            <div id="comments-list">
+                
+            </div>
+            
+        </div>
+        
+        <div class="small-div-demo">
+            <h1>
+                More Stories 
+            </h1>
+            <ul class="m-stories">
+                <a href="#" onclick="showArticle(0)">Federal Government reduces price of fuel by 40% in 40 hours</a>
+                <a href="#" onclick="showArticle(1)">State house of assembly dissmisses 3 representatives for bad conduct</a>
+                <a href="#" onclick="showArticle(2)">Federal High court charges CBN governor for alleged fraudulents activities </a>
+                <a href="#" onclick="showArticle(3)">Poor infrastructure in Nigerian schools, a point of concern in 2024</a>
+                <a href="#" onclick="showArticle(4)">Gloal Warming: Advantages and Disadvantages</a>
+                <a href="#" onclick="showArticle(5)">The Future of Agriculture in Nigeria</a>
+                <a href="#" onclick="showArticle(6)">Lack of stability in Governance, a big problem for Africa</a>
+                <a href="#" onclick="showArticle(7)">Davido to win afro single Grammy awards tonight</a>
+                <a href="#" onclick="showArticle(8)">Oshimen Scores four goals, 7 goal contributions in 5 games</a>
+            </ul>
+        </div>
+    </div>
+        
+    <div class="erd-section">
+        <div class="erd-section-ele">
+            <p>Wonderfull customer experince</p>
+        </div>
+        <div class="erd-section-ele">
+            <p>Low ad contents</p>
+        </div>
+        <div class="erd-section-ele">
+            <p>Write, Read and earn</p>
+        </div>
+    </div>
+
+    <div class="patner" style="padding: 30px;">
+        <marquee style="font-size: 30px;">Be a part of our wonderfull work today</marquee>
+        
+        <div class="fme">
+            <h3>For more enquires visit our social media handles </h3>
+
+            <ul class="fme-links-img">
+                <a href=""><img src=" facebook symbol.png" alt=""></a>
+                <a href=""><img src=" download (1).png" alt=""></a>
+                <a href=""><img src=" download.jpeg" alt=""></a>
+                <a href=""><img src=" github symbol.png" alt=""></a>
+            </ul>
+        </div>
+    </div>
+
+    <a href="#" style="color: white; padding: 0 20px 0 30px;" >Questions? Contact Us</a>
+
+    <div class="footer-holder">
+        <div class="footer">
+            <a href="">FAQ</a>
+            <a href="">Help Center</a>
+            <a href="loginpage.html">LogIn/Sign Up</a>
+            <a href="">Media Center</a>
+        </div>
+        <div class="footer">
+            <a href="">Investor Relations</a>
+            <a href="">Jobs</a>
+            <a href="">Ways to Watch</a>
+            <a href="">Terms of Use</a>
+        </div>
+        <div class="footer">
+            <a href="">Privacy</a>
+            <a href="">Cookie Preferences</a>
+            <a href="">Corporate Information</a>
+            <a href="mailto:ogunodemarvellous@gmail.com">FeedBack</a> 
+        </div>
+        <div class="footer">
+            <a href="">Speed Test</a>
+            <a href="">Legal Notices</a>
+            <a href="">Management</a> 
+        </div>
+    </div>
+
+    <div class="lang-select" style="padding: 30px;">
+        <select name="" id="" style=" border-radius: 20px; padding: 10px; font-size: 20px; background-color: rgb(36, 37, 44);">
+            <option value="">English</option>
+            <option value="">Chinese</option>
+            <option value="">Japanese</option>
+            <option value="">Twi</option>
+            <option value="">German</option>
+            <option value="">Portugese</option>
+        </select>
+    </div>
+
+    <p style="margin-top: 30px; margin-left: 30px;">
+        Developer : Walker @Walker77
+    </p>
+
+   
+
+<script src="ARTICLES.js"></script>
+<script src="homepage.js"></script>
 </body>
-<script src="login.js"></script>
 </html>
